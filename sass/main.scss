@@ -1,0 +1,63 @@
+@import "../bower_components/normalize-scss/normalize";
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  gutter-position: inside,
+  math: fluid,
+  output: float,
+);
+
+header {
+	@include container;
+	position:relative;
+	overflow:hidden;
+	height:100vh;
+	background-image: url("../images/bwbackground.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+	.profile-container {
+		position:relative;
+		margin:10% auto 0 auto;
+		padding-top:35%;
+		width: span(40%);
+		border:solid 1px #000;
+
+
+
+
+	}
+
+
+	.profile
+	{
+		position: absolute;
+		background:#000;
+		border-radius: 50%;
+		overflow:hidden;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+
+		&:after {
+			content:'';
+			display:block;
+			padding-top:100%;
+		}
+	}
+
+}
+
+main {
+	@include container;
+}
+
+.project {
+	
+}
+

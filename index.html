@@ -1,8 +1,123 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 	<title>Joshua Silver's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
-</body>
-</html>
+	<header>
+		<div class="profile-container">
+			<figure class="profile">
+				<img src="" alt="" title="">
+				<figcaption>
+				Joshua Silver
+				</figcaption>
+			</figure>
+		</div>
+	</header>
+	<main>
+	<h1>Portfolio</h1>
+		<section class="project">
+			<figure class="project-figure">
+				<figcaption></figcaption>
+			</figure>
+			<div class="project-text">
+				<h1>SafetyInsurance.com Responsive Redesign</h1>
+				<p>
+					Working with marketing and design, I was engineering the responsive redesign of the SafetyInsurance.com website.  Previously, Safety Insurance had separate mobile and deskop website experiences.  Due to the increasing array of devices and browsers as well as the costs of supporting two websites that shared much of the same content, it was determined that Safety Insurance needed both a new website and a more flexible content management platform.  I was instrumental in accomplishing both of these goals.     
+				</p>
+				<h2>Responsive Layout</h2>
+				<p>
+					Safety Insurance's public website has several different audiences: current customers, new customers, agents, and vendors.  Traffic trends to an older demographic where there is a significant enough number of older devices and browsers to merit tailoring the site more specifically to their needs.  As a result, the website had some interesting, unique requirements and constraints that required both the site and its chief developer to be responsive, including:
+				</p>
+				<ul>
+					<li>The website had to support IE8.</li>
+
+					<li>The website had to default to a full desktop layout on 800x600+ desktop devices even if resolution limitations dictated a 
+						horizontal scroll. </li>
+
+						<li>Larger-sized tablets, like the iPad, had to display the full desktop experience.   </li>
+
+						<li>Mobile users should be able to switch to the full desktop layout (and back again).</li>
+					</ul>
+					<p>
+						The designers originally designed three layouts for the site - a mobile version, a tablet version, and a desktop version.  As changing requirements dictated that most tablets had to have the forced desktop layout, it was largely shelved except in places where the desktop/mobile designs would clearly breakdown at those dimensions.  
+					</p>
+					<p>
+						The responsive redesign was accomplished using a combination of technologies and techniques.  Sass and the Susy custom grid system were employed to build the overarching responsive layout and manage breakpoints.  In order to address the tablet users' requirement, the viewport meta tag was manipulated with JavaScript to force a desktop layout depending on dimension and orientation. Similarly, this was used to provide a "switch" so that mobile and tablet users could toggle their preferred layout without leaving the page.  As the viewport meta tag is not supported on desktop, it is not shown to these users. In order to address 800x600 visitors receiving the full desktop layout, despite scroll, the desktop layout minimum breakpoint had to be smaller than normally would be warranted. 
+					</p>
+					<p>
+						As the site had to support IE8, I had to address this browsers' limitations, most notably, its lack of support for media queries  
+						and the SVG image format.  I chose to flatten the media queries and combine them with IE8 specific styles when warranted.  As I was using SVG sprite icons wherever possible to reduce bandwidth and latency, I elected to provide PNG fallback sprites that shared the same CSS classes. I used the Gulp build system to accomplish these and other tasks.  
+					</p>
+					<h2>More Flexible Content</h2>
+					<p>
+						The legacy desktop and mobile sites' content was rendered in HTML, as a result, the source was heavily married with unnecessary presentation markup. In order for Safety's content to be more semantic and thus more portable, I elected to have our source content converted to Markdown.  The Markdown files are then run through a templating engine that compiles clean HTML. Creating and editing articles is very clean and applies more of a "What you see is what you mean" (WYSIWYM) paradigm instead of the "What you see is what you get" (WYSIWYG) paradigm to structured documents.  Combined with YAML frontmatter, generating content is infinitely flexible.  For instance, as an author I can create page specific variables that when compiled will generate JSON-LD and Microdata in order to help Google better index Safety's content.  
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<figcaption></figcaption>
+				</figure>
+				<div class="project-text">
+					<h1>My Account</h1>
+
+					<p>
+						The "My Account" section of SafetyInsurance.com contains all of the features that allow insureds to view their policies, pay their bills, and file/check their claims online. Working with both designers and back-end developers, I was completely responsible for applying the new redesign treatment of this section of the website using the following technologies: HTML5, Sass/Compass, jQuery, and the jQuery UI library.  Redesigning the user interface included, developing a cleaner billpay process, a more user friendly registration process, and a more robust Report a Claim process, which added the ability to attach pictures when reporting a claim.  
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<figcaption></figcaption>
+				</figure>
+				<div class="project-text">
+					<h1>Web Statistics Executive Dashboard</h1>
+					<p>
+						The Web Statistics Reporting dashboard provides Safety’s executives with a monthly performance snapshot of Safety's public website and mobile (iphone/android) applications.  Prior to my complete overhaul of both the front and backend of this application, it had existed for years as a largely manually compiled report with very little ability to interact with it.   
+					</p>
+					<p>
+						Using AngularJS, Bootstrap, and Perl/SQL, I created a completely JSON data driven, single page application, complete with interactive charts that    
+						aggregates Safety’s transaction data with traffic and competitor tracking data from Google Analytics and Compete APIs. 
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<figcaption></figcaption>
+				</figure>
+				<div class="project-text">
+					<h1>Alert Center</h1>
+					<p>
+						In order to provide greater value for their customers, Safety Insurance added the "Alert Center" feature to the My Account section of its website.  This new optional feature enables insureds to add alerts to receive email and text reminders when it is time to renew their vehicle registration, license, or perform an auto inspection.  Working with designers, business analysts, and back-end developers, I built the entire user interface using HTML5, Sass/Compass, Ajax, jQuery, and the jQuery UI library.
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<figcaption></figcaption>
+				</figure>
+				<div class="project-text">
+					<h1>Resource Center</h1>
+					<p>
+						Working with marketing, I developed an application on the Safety Insurance site for more uniformly displaying marketing brochures and tip articles for use with their social media efforts.  The application rotates featured collateral on the homepage and Resource Center section, based on specified times of the year, while also allowing marketing to highlight specific resources as necessary.  I developed both the front and backend of the application using HTML5/CSS, jQuery, Perl, and SQL. 
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<figcaption></figcaption>
+				</figure>
+				<div class="project-text">
+					<h1>Agent Finder</h1>
+					<p>
+						I complete overhauled the Agent Finder section of the Safety Insurance website.  Prior to the re-engineering the application, the application would accepted an agent name, town, or zip code and return a list of agents.  Working with a designer and a backend developer, I redesigned the application using the Google Maps and Autocomplete APIs to allow users to discover agents via geolocation or manual input, and plotted their locations on a map and listed them based on distance.  I accomplished this application using jQuery, HTML5, and Sass.   
+					</p>
+				</div>
+			</section>
+		</main>
+	</body>
+	</html>

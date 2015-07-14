@@ -10,8 +10,8 @@ $susy: (
 	output: float,
 	);
 
-$font-body: 'Josefin Sans', sans-serif;
-$font-header: 'Josefin Slab', serif;
+$font-body: 'Lato', sans-serif;
+$font-header: 'Merriweather', serif;
 
 body {
 	@include container;
@@ -24,12 +24,29 @@ h1, h2, h3, h4, h5 {
 	font-family: $font-header;
 }
 
-a {
-	text-decoration: none;
+h2 {
+	font-size:1.25em;
+	line-height:2em;
 }
 
-.download {
+h3 {
+	font-size:1.25em;
+}
+
+h4 {
+	font-size:1em;
+}
+
+a {
+	text-decoration: none;
+	color:#2098d1;
+}
+
+p {
 	line-height:1.25em;
+}
+
+.visit {
 	&:before {
 		content:"";
 		display:inline-block;
@@ -37,7 +54,22 @@ a {
 		vertical-align: top;
 		width: 16px;
 		height: 16px;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpElEQVQ4T42TTVIbMRCFv5Yr5ewyN4j2VGxzAjsniH0C7A3gVcgJ4pwgeDXABnMCfIMMJ2CGFHsdAe+giNUpaTx2/ANBqylNv6d+n1rCG5ZNf3eQ+XeQDqgDmVL3P9xg/0H+p7dnxSnwdbtOc+r6+VUDmxYThIOFeIyaKUYT1E9APgDjFw3sxX2L+Z8uYEEyN2xMqi7s+V0X1WvQfKeBTW8txrRREozk7rBx82+Ekon/BTrbMrDnxQmqAViyEmlGXXsBWthbclFu1gzWM2uBygOirZhXuXLDZt+md31EL6O5mhXENbHwzR01A30WLE5577s81rpLMYzdcfMkdrB2VSoDarUc/3yNeddzh3t5rInR+FmeXHYTPmUFJPyQQaBt0yJDaIOGzMEgAWltihcGVXHZUjzt8jbh0UxLk2rpDJFRFa3aFXtWaAXEDT9lW9dlfIDo8PPcDffd5kSKTXOHyEdEeu6oMV0OS6Tt20gQ+6td4jLCctZDXtNHZYb4L0CMU3F56c1IzPskGUhzq2gB9bUHV15jNDEj0E6cfZUczGiTyS6jv3+Lxqn5JLzbAAAAAElFTkSuQmCC');
+
+	}
+}
+
+.download {
+	&:before {
+		content:"";
+		display:inline-block;
+		margin:2px 7px 0 0;
+		vertical-align: top;
+		width: 16px;
+		height: 16px;
 		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC');
+
+
 
 	}
 
@@ -104,13 +136,13 @@ header {
 	}
 
 	h1 {
-		font-size: 2em;
+		font-size: 1.5em;
 		color:#fff;		
 		text-align: center;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1em;
 		color:#fff;		
 		text-align: center;
 
@@ -128,7 +160,7 @@ main {
 }
 
 .intro {
-	background: #4c8ca7;
+	background: #2098d1;
 	color:#fff;
 	@include span(4);
 
@@ -147,7 +179,7 @@ main {
 	}
 
 	h1 {
-		line-height:1.25em;
+		line-height:1em;
 	}
 }
 
@@ -181,5 +213,12 @@ main {
 		box-shadow: -4px 7px 26px -7px rgba(0,0,0,0.75);;
 
 	}
+}
+
+footer {
+	@include break;
+	@include span(4);
+	color:#fff;
+	background:#222;
 }
 

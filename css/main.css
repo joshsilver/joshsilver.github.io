@@ -371,7 +371,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px; }
   body:after {
@@ -380,21 +380,42 @@ body {
     clear: both; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Josefin Slab", serif; }
+  font-family: "Merriweather", serif; }
+
+h2 {
+  font-size: 1.25em;
+  line-height: 2em; }
+
+h3 {
+  font-size: 1.25em; }
+
+h4 {
+  font-size: 1em; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2098d1; }
 
-.download {
+p {
   line-height: 1.25em; }
-  .download:before {
-    content: "";
-    display: inline-block;
-    margin: 0 7px 0 0;
-    vertical-align: top;
-    width: 16px;
-    height: 16px;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC"); }
+
+.visit:before {
+  content: "";
+  display: inline-block;
+  margin: 0 7px 0 0;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpElEQVQ4T42TTVIbMRCFv5Yr5ewyN4j2VGxzAjsniH0C7A3gVcgJ4pwgeDXABnMCfIMMJ2CGFHsdAe+giNUpaTx2/ANBqylNv6d+n1rCG5ZNf3eQ+XeQDqgDmVL3P9xg/0H+p7dnxSnwdbtOc+r6+VUDmxYThIOFeIyaKUYT1E9APgDjFw3sxX2L+Z8uYEEyN2xMqi7s+V0X1WvQfKeBTW8txrRREozk7rBx82+Ekon/BTrbMrDnxQmqAViyEmlGXXsBWthbclFu1gzWM2uBygOirZhXuXLDZt+md31EL6O5mhXENbHwzR01A30WLE5577s81rpLMYzdcfMkdrB2VSoDarUc/3yNeddzh3t5rInR+FmeXHYTPmUFJPyQQaBt0yJDaIOGzMEgAWltihcGVXHZUjzt8jbh0UxLk2rpDJFRFa3aFXtWaAXEDT9lW9dlfIDo8PPcDffd5kSKTXOHyEdEeu6oMV0OS6Tt20gQ+6td4jLCctZDXtNHZYb4L0CMU3F56c1IzPskGUhzq2gB9bUHV15jNDEj0E6cfZUczGiTyS6jv3+Lxqn5JLzbAAAAAElFTkSuQmCC"); }
+
+.download:before {
+  content: "";
+  display: inline-block;
+  margin: 2px 7px 0 0;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC"); }
 
 header {
   -moz-box-sizing: border-box;
@@ -445,11 +466,11 @@ header {
       display: block;
       padding-top: 100%; }
   header h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     text-align: center; }
   header h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff;
     text-align: center; }
     header h2 a {
@@ -465,7 +486,7 @@ main {
   padding-right: 4.16667%; }
 
 .intro {
-  background: #4c8ca7;
+  background: #2098d1;
   color: #fff;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -492,7 +513,7 @@ main {
     .project {
       flex-direction: row; } }
   .project h1 {
-    line-height: 1.25em; }
+    line-height: 1em; }
 
 .project-text {
   width: 100%; }
@@ -515,3 +536,15 @@ main {
     max-width: 100%;
     border: solid 1px #E3E5E9;
     box-shadow: -4px 7px 26px -7px rgba(0, 0, 0, 0.75); }
+
+footer {
+  clear: both;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 4.16667%;
+  padding-right: 4.16667%;
+  color: #fff;
+  background: #222; }

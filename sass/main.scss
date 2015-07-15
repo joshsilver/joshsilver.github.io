@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5 {
 h2 {
 	font-size:1.25em;
 	line-height:2em;
+	margin:1em 0 0 0;
+
 }
 
 h3 {
@@ -43,7 +45,7 @@ a {
 }
 
 p {
-	line-height:1.25em;
+	line-height:1.5em;
 }
 
 .visit {
@@ -79,17 +81,23 @@ header {
 	@include span(4);
 	position:relative;
 	overflow:hidden;
-	max-height:80vh;
+	height:40vh;
 	background-size: 150%;
+	
 	@include breakpoint(800px) {
 		max-height:auto;
-		
+		height:60vh;
 		background-size: cover;	
+	}
+
+	@include breakpoint(1000px) {
+		height:80vh;
+
 	}
 
 
 
-	background-image: url("../images/workbackground3-optimized.jpg");
+	background-image: url("../images/workbackground2.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
@@ -97,7 +105,7 @@ header {
 
 	.profile-container {
 		position:relative;
-		margin:5% auto 0 auto;
+		margin:10% auto 0 auto;
 		width: span(1 of 4);
 
 		@include breakpoint(800px) {
@@ -156,7 +164,7 @@ header {
 }
 
 main {
-	@include span(4);
+	@include span(4);	
 }
 
 .intro {
@@ -181,6 +189,8 @@ main {
 	h1 {
 		line-height:1em;
 	}
+
+	
 }
 
 .project-text {
@@ -200,6 +210,9 @@ main {
 	width: span(4);
 	@include squish(0);
 
+	figcaption {
+		line-height:2.25em;
+	}
 
 	@include breakpoint(1000px) {
 		width: span(2 of 4);
@@ -216,9 +229,13 @@ main {
 }
 
 footer {
-	@include break;
-	@include span(4);
+	@include full;
+	padding-bottom:10px;
 	color:#fff;
 	background:#222;
+
+	h2 {
+		line-height:1em;
+	}
 }
 

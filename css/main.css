@@ -403,7 +403,7 @@ p {
 .visit:before {
   content: "";
   display: inline-block;
-  margin: 0 7px 0 0;
+  margin: 3px 7px 0 0;
   vertical-align: top;
   width: 16px;
   height: 16px;
@@ -418,6 +418,24 @@ p {
   height: 16px;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC"); }
 
+[href="#top"] {
+  color: #fff;
+  float: right; }
+  [href="#top"]:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/klEQVRYR82X4TUDQRSF761AVIAKUAEqQAWoQFRAOogKUIGoQFQgqUB0kFTwnLtm9qzNTnZmYsP8iXPs7P3efW/fvCESlpmdATgFsAugB+DAbZ8AmAOYARiRfIl9LdseNDOJ3QKQuERjlmBGAG5I6u/gWglgZncArhOE60ISH5IchAgaAcxMkb5WLI6JetUzStFJkxtLAGamvEo81u5YOLkhCMGU6weAi/yjA3EvKIi9qhMlQAe2h5yZkDz0/6wCqOBU7ZtYA5LSQwHgPrX3Dq1v+jqKVHiARwAXmwi9ovFE8tIDqDi2MgA+3Z6djL1zktt07fU54wVFBC6FuQ6eCyBncynuwTPfcy+AMYCjBAeqkRcOkFQQKubUYN4EoM60HwlQF39w+64yISYCsDXF/fYsiFiAUOR19mSImBTEiuc4MY0pQnWsmZmp4HzO27JWOOE6rA630CqKsK1yh27U0m/K6rvRTb+hVXyGGrVyGlEKTOjZ83Vb8ToQC5K9f3MYafzSSJ1zIOW4sFB9lMexa6N/N5BUDpSUtpwTufZMSfoLzfdEVAHoOhWl9V4zNJbrhPztepD48cqxvOaEIGJPybZ0TJ340jUt5mqmTpbrhqLW1ayYgJtWzOVUdaE2rI4ZCyJhXU77a11O68SubQvEX899imSx7NVXNCYp8aj1BSSb9+AHBghxAAAAAElFTkSuQmCC");
+    background-size: cover; }
+    @media (min-width: 800px) {
+      [href="#top"]:before {
+        width: 32px;
+        height: 32px; } }
+  [href="#top"]:hover:before {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACSklEQVRYR81X23UTMRCdUQM4FWAqIFSQUAGhAljJ/4QKknTg/FsWVICpgKQCNhVgOjANaDhXkfY4znpXq7UP6Gc/VtK9c2c0D6YBa7FYXDDzO2aeEtGEiE7j8ZqINiKyZuaV1vp77rXct9E5N/XeXzHzRQTtO4L/ILNSSn2uqmrTdaCTgLX2mpk/DQDexdow87yqqpt9JFoJOOcmIvJjS+Icq7v21Mz8tk2NZwScc6cRHD4+5IIaIIF4adYTAtHyXyMk7yMMEq+2lWgIHEH2fWRqrfWb9LMhEAPuqs+EQ/wXkRtjzDXuCgTw1ETk5xGlb3sdwRWBwHK5/EJEHw5h3YA7vmqtPwYC1loEx4sBh8NWEfkdZGR+OfQskpXW+oSRXpVS3wouCBaMUdB7/54L5W/AE/HCe25B4I6IzgYo0IBba4MCxhjEUEks3bO1FmnydSaBJ+DM7GIsVIUkaiggY8DTWREpIpFLoNXyXeIlJHJckAVeooSIPPQGYSweawRc8nmfy5ISMcOiuO1b973PUETmSqk1vn3A2/+Z+dJ7P8W349ztmEQ0hE/r3pCIxqTiMQxE5I8xZvJ/FCM0I957tNSDC1KJCrBeKTVtynF0Azrgf9OQJCsGpuUS41HCH4wxaaB57IjSOrYrtqVPmK1tuff+7tDxEMHPO9vyHSVAIrdKdroDsiulAP5sTOsdzYjoslQNWE1E89QBt7HMGU4xps1FBJNx1jMFMKZkpOFRw+ku49g/YkpGGz9JLgpVjRny1oif2Wy2yn0ifwGkEWSCDqku0AAAAABJRU5ErkJggg=="); }
+
 header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -428,26 +446,27 @@ header {
   padding-right: 4.16667%;
   position: relative;
   overflow: hidden;
-  height: 40vh;
+  height: 30vh;
   background-size: 150%;
   background-image: url("../images/workbackground2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); }
-  @media (min-width: 800px) {
+  @media (min-width: 550px) {
     header {
       max-height: auto;
+      height: 40vh; } }
+  @media (min-width: 800px) {
+    header {
       height: 60vh;
       background-size: cover; } }
-  @media (min-width: 1000px) {
-    header {
-      height: 80vh; } }
   header .profile-container {
     position: relative;
-    margin: 10% auto 0 auto;
+    margin: 5vh auto 0 auto;
     width: 25%; }
     @media (min-width: 800px) {
       header .profile-container {
+        margin: 10vh auto 0 auto;
         max-width: 330px; } }
     header .profile-container:after {
       content: '';
@@ -480,6 +499,8 @@ header {
     text-align: center; }
     header h2 a {
       color: #fff; }
+      header h2 a:hover {
+        border-bottom: dotted 1px #fff; }
 
 main {
   -moz-box-sizing: border-box;
@@ -508,6 +529,7 @@ main {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1em;
   display: flex;
   flex-direction: column-reverse; }
   .project:after {
@@ -553,8 +575,10 @@ footer {
   float: left;
   padding-left: 4.16667%;
   padding-right: 4.16667%;
-  padding-bottom: 10px;
   color: #fff;
-  background: #222; }
-  footer h2 {
-    line-height: 1em; }
+  background: #222;
+  padding-bottom: 1em; }
+  footer a {
+    color: inherit; }
+    footer a:hover {
+      border-bottom: dotted 1px #fff; }

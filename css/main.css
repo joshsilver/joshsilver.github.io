@@ -473,6 +473,10 @@ header {
   header .profile-caption {
     margin: 0 auto 0 auto;
     width: 75%; }
+    @media (min-width: 490px) {
+      header .profile-caption a:before {
+        content: "| ";
+        display: inline; } }
   header .profile-container {
     position: relative;
     margin: 0 auto 0 auto;

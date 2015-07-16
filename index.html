@@ -16,30 +16,30 @@
 			</div>
 		</div>
 		<div class="profile-caption">
-		<h1>
-			Joshua Silver 
-		</h1>
-		<h2>Front End Developer | <a href="mailto:info@joshuasilver.me">info@joshuasilver.me</a></h2>
+			<h1>
+				Joshua Silver 
+			</h1>
+			<h2>Front End Developer  <a href="mailto:info@joshuasilver.me">info@joshuasilver.me</a></h2>
 		</div>
-		</header>
-		<section class="intro">
-			<h2>About</h2>
-			
-			<p>
-				Driven, goal-oriented creative professional with extensive experience developing interactive Web interfaces and a background in marketing. Works closely with marketing, designers, and developers building dynamic data driven websites and applications using a wide variety of technologies. 
-			</p>
-			<p><a href="joshsilver-resume.pdf" target="_blank" class="download">Download My Resume</a></p>
+	</header>
+	<section class="intro">
+		<h2>About</h2>
+		<p>
+			Driven, goal-oriented creative professional with extensive experience developing interactive Web interfaces and a background in marketing. Works closely with marketing, designers, and developers building dynamic data driven websites and applications using a wide variety of technologies. 
+		</p>
+		<p><a href="joshsilver-resume.pdf" target="_blank" class="download">Download My Resume</a></p>
 
-		</section>
-		<main>
-			<h2>Portfolio</h2>
-			<section class="project">
-				<figure class="project-figure">
-					<a href="https://www.safetyinsurance.com" target="_blank"><img src="images/safetyredesign.jpg" title="SafetyInsurance.com Responsive Redesign" alt="SafetyInsurance.com Responsive Redesign"></a>
-					<figcaption>SafetyInsurance.com Responsive Redesign</figcaption>
-				</figure>
-				<div class="project-text">
-					<h3>SafetyInsurance.com Responsive Redesign</h3>
+	</section>
+	<main>
+		<h2>Portfolio</h2>
+		<section class="project">
+			<figure class="project-figure">
+				<a href="https://www.safetyinsurance.com" target="_blank"><img src="images/safetyredesign.jpg" title="SafetyInsurance.com Responsive Redesign" alt="SafetyInsurance.com Responsive Redesign"></a>
+				<figcaption>SafetyInsurance.com Responsive Redesign</figcaption>
+			</figure>
+			<div class="project-text">
+				<h3>SafetyInsurance.com Responsive Redesign</h3>
+				<div class="page-one">
 					<p>
 						Working with marketing and design, I was chiefly responsible for engineering the responsive redesign of the SafetyInsurance.com website.  Previously, Safety Insurance had separate mobile and deskop website experiences.  Due to the increasing array of devices and browsers as well as the costs of supporting two websites that shared much of the same content, it was determined that Safety Insurance needed both a new website and a more flexible content management platform.  I was instrumental in accomplishing both of these goals.     
 					</p>					
@@ -56,7 +56,11 @@
 
 							<li>Mobile users should be able to switch to the full desktop layout (and back again).</li>
 						</ul>
-						<!--<p>
+					</div>
+					<label for="pagenav-next">Read More</label>
+					<input type="radio" id="pagenav-next" name="pagenav" value="next">
+					<div class="page-two">
+						<p>
 							The designers originally designed three layouts for the site - a mobile version, a tablet version, and a desktop version.  As changing requirements dictated that most tablets had to have the forced desktop layout, it was largely shelved except in places where the desktop/mobile designs would clearly breakdown at those dimensions.  
 						</p>
 
@@ -69,100 +73,101 @@
 						<h4>More Flexible Content</h4>
 						<p>
 							The legacy desktop and mobile sites' content was rendered in HTML, as a result, the source was heavily married with unnecessary presentation markup. In order for Safety's content to be more semantic and thus more portable, I elected to have our source content converted to Markdown.  The Markdown files are then run through a templating engine that compiles clean HTML. Creating and editing articles is very clean and applies more of a "What you see is what you mean" (WYSIWYM) paradigm instead of the "What you see is what you get" (WYSIWYG) paradigm to structured documents.  Combined with YAML frontmatter, generating content is infinitely flexible.  For instance, as an author I can create page specific variables that when compiled will generate JSON-LD and Microdata in order to help Google better index Safety's content.  
-						</p>//-->
-						<p><a href="https://www.safetyinsurance.com" target="_blank" class="visit">Visit this project</a>
 						</p>
 					</div>
-				</section>
-				<section class="project">
-					<figure class="project-figure">
-						<a href="https://www.safetyinsurance.com/myaccount/" target="_blank"><img src="images/myaccount.png" title="My Account" alt="My Account"></a>
-						<figcaption>My Account</figcaption>
-					</figure>
-					<div class="project-text">
-						<h3>My Account</h3>
+					<p><a href="https://www.safetyinsurance.com" target="_blank" class="visit">Visit this project</a>
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<a href="https://www.safetyinsurance.com/myaccount/" target="_blank"><img src="images/myaccount.png" title="My Account" alt="My Account"></a>
+					<figcaption>My Account</figcaption>
+				</figure>
+				<div class="project-text">
+					<h3>My Account</h3>
 
-						<p>
-							The "My Account" section of SafetyInsurance.com contains all of the features that allow insureds to view their policies, pay their bills, and file/check their claims online. Working with both designers and back-end developers, I was completely responsible for applying the new redesign treatment of this section of the website using the following technologies: HTML5, Sass/Compass, jQuery, and the jQuery UI library.  Redesigning the user interface included developing a cleaner billpay process, a more user friendly registration process, and a more robust Report a Claim process.  
-						</p>
-						<p><a href="https://www.safetyinsurance.com/myaccount/" target="_blank" class="visit">Visit this project</a> <br>(Login or create an account required)
-						</p>
-					</div>
-				</section>
-				
-				<section class="project">
-					<figure class="project-figure">
-						<a href="https://www.safetyinsurance.com/myaccount/login.pl?back_url=/commcenter/" target="_blank"><img src="images/alertcenter.png" title="Alert Center" alt="Alert Center"></a>
-						<figcaption>Alert Center</figcaption>
-					</figure>
-					<div class="project-text">
-						<h3>Alert Center</h3>
-						<p>
-							In order to provide greater value for their customers, Safety Insurance added the "Alert Center" feature to the My Account section of its website.  This new optional feature enables insureds to add alerts to receive email and text reminders when it is time to renew their vehicle registration, license, perform an auto inspection, or when a payment is due.  Working with designers, business analysts, and back-end developers, I built the user interface using HTML5, Sass/Compass, Ajax, jQuery, and the jQuery UI library.
-						</p>
-						<p><a href="https://www.safetyinsurance.com/myaccount/login.pl?back_url=/commcenter/" target="_blank" class="visit">Visit this project</a> <br>(Login or create an account required)
-						</p>
-					</div>
-				</section>
-				<section class="project">
-					<figure class="project-figure">
-						<a href="https://www.safetyinsurance.com/resource_center/" target="_blank"><img src="images/resourcecenter.png" title="Resource Center" alt="Resource Center"></a>
-						<figcaption>Resource Center</figcaption>
-					</figure>
-					<div class="project-text">
-						<h3>Resource Center</h3>
-						<p>
-							Working with marketing, I developed an application on the Safety Insurance site for more uniformly displaying marketing brochures and tip articles for use with their social media efforts.  The application rotates featured collateral on the homepage and Resource Center section of SafetyInsurance.com.  The articles rotate based on specified times of the year while also allowing marketing to highlight specific resources as necessary.  I developed both the front and backend of the application using HTML5/CSS, jQuery, Perl, and SQL. 
-						</p>
-						<p><a href="https://www.safetyinsurance.com/resource_center/" target="_blank" class="visit">Visit this project</a>
-						</p>
-					</div>
-				</section>
-				<section class="project">
-					<figure class="project-figure">
-						<a href="https://www.safetyinsurance.com/agentfinder/" target="_blank"><img src="images/agentfinder.png" title="Find an Agent" alt="Find an Agent"></a>
-						<figcaption>Find an Agent</figcaption>
-					</figure>
-					<div class="project-text">
-						<h3>Find an Agent</h3>
-						<p>
-							I complete overhauled the "Find an Agent" application on the Safety Insurance website.  Prior to re-engineering the application, the form would accepted an agent name, town, or zip code and only return a list of agents.  Working with a designer and a backend developer, I redesigned the application using the Google Maps and Autocomplete APIs to allow users to discover agents via geolocation or manual input, and plotted their locations on a map and listed their location via distance.  This application was developed using jQuery, HTML5, Sass, and Perl.   
-						</p>
-						<p><a href="https://www.safetyinsurance.com/agentfinder/" target="_blank" class="visit">Visit this project</a>
-						</p>
-					</div>
-				</section>
-				<section class="project">
-					<figure class="project-figure">
-						<img src="images/webstats.png" title="Web Statistics Executive Dashboard" alt="Web Statistics Executive Dashboard">
-						<figcaption>Web Statistics Executive Dashboard</figcaption>
-					</figure>
-					<div class="project-text">
-						<h3>Web Statistics Executive Dashboard</h3>
-						<p>
-							The Web Statistics Reporting dashboard provides Safety’s executives with a monthly performance snapshot of Safety's public website and mobile (iphone/android) applications.  Prior to my complete overhaul of both the front and backend of this application, it had existed for years as a largely manually compiled report with very little ability to interact with it.   
-						</p>
-						<p>
-							Using AngularJS, Bootstrap, and Perl/SQL, I created a completely JSON data driven, single page application, complete with interactive charts that    
-							aggregates Safety’s transaction data with traffic and competitor tracking data from Google Analytics and Compete APIs. 
-						</p>
-					</div>
-				</section>				
-			</main>
+					<p>
+						The "My Account" section of SafetyInsurance.com contains all of the features that allow insureds to view their policies, pay their bills, and file/check their claims online. Working with both designers and back-end developers, I was completely responsible for applying the new redesign treatment of this section of the website using the following technologies: HTML5, Sass/Compass, jQuery, and the jQuery UI library.  Redesigning the user interface included developing a cleaner billpay process, a more user friendly registration process, and a more robust Report a Claim process.  
+					</p>
+					<p><a href="https://www.safetyinsurance.com/myaccount/" target="_blank" class="visit">Visit this project</a> <br>(Login or create an account required)
+					</p>
+				</div>
+			</section>
 
-			<footer>
-				<h2>Contact</h2>
-				<p>
-					<a href="mailto:info@joshuasilver.me">info@joshuasilver.me</a>
-					<a href="#top"></a>
-				</p>
-			</footer>
-			<script type="text/javascript">
-				<!--
-				var transitions = setTimeout(function() {
-					document.getElementsByTagName('body')[0].className='ready';
+			<section class="project">
+				<figure class="project-figure">
+					<a href="https://www.safetyinsurance.com/myaccount/login.pl?back_url=/commcenter/" target="_blank"><img src="images/alertcenter.png" title="Alert Center" alt="Alert Center"></a>
+					<figcaption>Alert Center</figcaption>
+				</figure>
+				<div class="project-text">
+					<h3>Alert Center</h3>
+					<p>
+						In order to provide greater value for their customers, Safety Insurance added the "Alert Center" feature to the My Account section of its website.  This new optional feature enables insureds to add alerts to receive email and text reminders when it is time to renew their vehicle registration, license, perform an auto inspection, or when a payment is due.  Working with designers, business analysts, and back-end developers, I built the user interface using HTML5, Sass/Compass, Ajax, jQuery, and the jQuery UI library.
+					</p>
+					<p><a href="https://www.safetyinsurance.com/myaccount/login.pl?back_url=/commcenter/" target="_blank" class="visit">Visit this project</a> <br>(Login or create an account required)
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<a href="https://www.safetyinsurance.com/resource_center/" target="_blank"><img src="images/resourcecenter.png" title="Resource Center" alt="Resource Center"></a>
+					<figcaption>Resource Center</figcaption>
+				</figure>
+				<div class="project-text">
+					<h3>Resource Center</h3>
+					<p>
+						Working with marketing, I developed an application on the Safety Insurance site for more uniformly displaying marketing brochures and tip articles for use with their social media efforts.  The application rotates featured collateral on the homepage and Resource Center section of SafetyInsurance.com.  The articles rotate based on specified times of the year while also allowing marketing to highlight specific resources as necessary.  I developed both the front and backend of the application using HTML5/CSS, jQuery, Perl, and SQL. 
+					</p>
+					<p><a href="https://www.safetyinsurance.com/resource_center/" target="_blank" class="visit">Visit this project</a>
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<a href="https://www.safetyinsurance.com/agentfinder/" target="_blank"><img src="images/agentfinder.png" title="Find an Agent" alt="Find an Agent"></a>
+					<figcaption>Find an Agent</figcaption>
+				</figure>
+				<div class="project-text">
+					<h3>Find an Agent</h3>
+					<p>
+						I complete overhauled the "Find an Agent" application on the Safety Insurance website.  Prior to re-engineering the application, the form would accepted an agent name, town, or zip code and only return a list of agents.  Working with a designer and a backend developer, I redesigned the application using the Google Maps and Autocomplete APIs to allow users to discover agents via geolocation or manual input, and plotted their locations on a map and listed their location via distance.  This application was developed using jQuery, HTML5, Sass, and Perl.   
+					</p>
+					<p><a href="https://www.safetyinsurance.com/agentfinder/" target="_blank" class="visit">Visit this project</a>
+					</p>
+				</div>
+			</section>
+			<section class="project">
+				<figure class="project-figure">
+					<img src="images/webstats.png" title="Web Statistics Executive Dashboard" alt="Web Statistics Executive Dashboard">
+					<figcaption>Web Statistics Executive Dashboard</figcaption>
+				</figure>
+				<div class="project-text">
+					<h3>Web Statistics Executive Dashboard</h3>
+					<p>
+						The Web Statistics Reporting dashboard provides Safety’s executives with a monthly performance snapshot of Safety's public website and mobile (iphone/android) applications.  Prior to my complete overhaul of both the front and backend of this application, it had existed for years as a largely manually compiled report with very little ability to interact with it.   
+					</p>
+					<p>
+						Using AngularJS, Bootstrap, and Perl/SQL, I created a completely JSON data driven, single page application, complete with interactive charts that    
+						aggregates Safety’s transaction data with traffic and competitor tracking data from Google Analytics and Compete APIs. 
+					</p>
+				</div>
+			</section>				
+		</main>
 
-				},200);
+		<footer>
+			<h2>Contact</h2>
+			<p>
+				<a href="mailto:info@joshuasilver.me">info@joshuasilver.me</a>
+				<a href="#top"></a>
+			</p>
+		</footer>
+		<script type="text/javascript">
+			<!--
+			var transitions = setTimeout(function() {
+				document.getElementsByTagName('body')[0].className='ready';
+
+			},200);
 			//-->
 		</script>
 

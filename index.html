@@ -59,8 +59,8 @@
 
 							<li>Mobile users should be able to switch to the full desktop layout (and back again).</li>
 						</ul>
-						</div>
-						<div class="page">
+					</div>
+					<div class="page">
 						<p>
 							The responsive redesign was accomplished using a combination of technologies and techniques.  Sass and the Susy custom grid system were employed to build the overarching responsive layout and manage breakpoints.  In order to address the tablet users' requirement, the viewport meta tag was manipulated with JavaScript to force a desktop layout depending on dimension and orientation. Similarly, this was used to provide a "switch" so that mobile and tablet users could toggle their preferred layout without leaving the page.  As the viewport meta tag is not supported on desktop, the toggle is not shown to these users. In order to address 800x600 visitors receiving the full desktop layout, despite scroll, the desktop layout minimum breakpoint had to be smaller than normally would be warranted. 
 						</p>
@@ -69,8 +69,8 @@
 						<p>
 							As the site had to support IE8, I had to address this browser's limitations, most notably, its lack of support for media queries and the SVG image format.  I chose to flatten the media queries and combine them with IE8 specific styles when warranted.  As I was using SVG sprite icons wherever possible to reduce bandwidth and latency, I elected to provide PNG fallback sprites that shared the same CSS classes. I used the Gulp build system to accomplish these and other tasks.  
 						</p>
-						</div>
-						<div class="page">
+					</div>
+					<div class="page">
 						<h4>More Flexible Content Management</h4>
 						<p>
 							The legacy desktop and mobile sites' source content was rendered in HTML, as a result, the source was heavily married with presentation markup. I elected to have our source content converted to a more portable format - Markdown.  The Markdown files are then run through a templating engine that compiles clean HTML. Creating and editing articles is very clean and applies more of a "What you see is what you mean" (WYSIWYM) paradigm instead of the "What you see is what you get" (WYSIWYG) paradigm to structured documents.  Further, using YAML frontmatter, authors can add page specific variables that when compiled will generate JSON-LD and Microdata in order to help Google better index Safety's content.  
@@ -178,25 +178,28 @@
 			<!--
 
 			
-				var transitions = setTimeout(function() {
-					$('body').addClass('ready');
-				},200);
+			var transitions = setTimeout(function() {
+				$('body').addClass('ready');
+			},200);
 
 
-				var pagenav = $('.nav-pagination li');
-				var pages = $('#project-responsive .page');
+			var pagenav = $('.nav-pagination li');
+			var pages = $('#project-responsive .page');
 
-				pagenav.each(function(index){
-					
-					$(this).click(function(){
+			pagenav.each(function(index){
 
-						$('.current').removeClass('current');
-						$(this).addClass('current');
-						pages.eq(index).addClass('current');
-					})
+				$(this).click(function(){
+
+					$('.current').removeClass('current');
+					$(this).addClass('current');
+					pages.eq(index).addClass('current');
+					$('html, body').animate({
+						scrollTop: $("#project-responsive").offset().top
+					}, 1000);
 				})
+			})
 
-				
+
 			
 
 			//-->

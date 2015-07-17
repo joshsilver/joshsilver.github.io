@@ -552,7 +552,7 @@ header .profile-caption {
 
 @media (min-width: 490px) {
   header .profile-caption .divider:after {
-    content: "| ";
+    content: " | ";
     display: inline;
   }
 }

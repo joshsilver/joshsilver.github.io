@@ -32,19 +32,22 @@
 	</section>
 	<main>
 		<h2>Portfolio</h2>
-		<section class="project">
+		<section class="project" id="project-responsive">
 			<figure class="project-figure">
 				<a href="https://www.safetyinsurance.com" target="_blank"><img src="images/safetyredesign.jpg" title="SafetyInsurance.com Responsive Redesign" alt="SafetyInsurance.com Responsive Redesign"></a>
 				<figcaption>SafetyInsurance.com Responsive Redesign</figcaption>
 			</figure>
 			<div class="project-text">
 				<h3>SafetyInsurance.com Responsive Redesign</h3>
-				<div class="page-one">
+				<div class="page current">
 					<p>
 						Working with marketing and design, I was chiefly responsible for engineering the responsive redesign of the SafetyInsurance.com website.  Previously, Safety Insurance had separate mobile and deskop website experiences.  Due to the increasing array of devices and browsers as well as the costs of supporting two websites that shared much of the same content, it was determined that Safety Insurance needed both a new website and a more flexible content management platform.  I was instrumental in accomplishing both of these goals.     
 					</p>					
+					
+				</div>
+				<div class="page">
 					<p>
-						Safety Insurance's public website has several different audiences: current customers, new customers, agents, and vendors.  Traffic trends to an older demographic where there is a significant enough number of older devices and browsers to merit tailoring the site more specifically to their needs.  As a result, the website had some interesting, unique requirements and constraints that required both the site and its chief developer to be responsive, including:
+						Safety Insurance's public website has several different audiences: current customers, new customers, agents, and vendors.  Traffic trends to an older demographic where there is a significant enough number of older devices and browsers to merit tailoring the site more specifically to their needs.  The responsive website had some interesting, unique requirements, including:
 					</p>
 					<ul>
 						<li>The website had to support IE8.</li>
@@ -56,25 +59,33 @@
 
 							<li>Mobile users should be able to switch to the full desktop layout (and back again).</li>
 						</ul>
+						</div>
+						<div class="page">
+						<p>
+							The responsive redesign was accomplished using a combination of technologies and techniques.  Sass and the Susy custom grid system were employed to build the overarching responsive layout and manage breakpoints.  In order to address the tablet users' requirement, the viewport meta tag was manipulated with JavaScript to force a desktop layout depending on dimension and orientation. Similarly, this was used to provide a "switch" so that mobile and tablet users could toggle their preferred layout without leaving the page.  As the viewport meta tag is not supported on desktop, the toggle is not shown to these users. In order to address 800x600 visitors receiving the full desktop layout, despite scroll, the desktop layout minimum breakpoint had to be smaller than normally would be warranted. 
+						</p>
 					</div>
-					<label for="pagenav-next">Read More</label>
-					<input type="radio" id="pagenav-next" name="pagenav" value="next">
-					<div class="page-two">
-						<p>
-							The designers originally designed three layouts for the site - a mobile version, a tablet version, and a desktop version.  As changing requirements dictated that most tablets had to have the forced desktop layout, it was largely shelved except in places where the desktop/mobile designs would clearly breakdown at those dimensions.  
-						</p>
-
-						<p>
-							The responsive redesign was accomplished using a combination of technologies and techniques.  Sass and the Susy custom grid system were employed to build the overarching responsive layout and manage breakpoints.  In order to address the tablet users' requirement, the viewport meta tag was manipulated with JavaScript to force a desktop layout depending on dimension and orientation. Similarly, this was used to provide a "switch" so that mobile and tablet users could toggle their preferred layout without leaving the page.  As the viewport meta tag is not supported on desktop, it is not shown to these users. In order to address 800x600 visitors receiving the full desktop layout, despite scroll, the desktop layout minimum breakpoint had to be smaller than normally would be warranted. 
-						</p>
+					<div class="page">
 						<p>
 							As the site had to support IE8, I had to address this browser's limitations, most notably, its lack of support for media queries and the SVG image format.  I chose to flatten the media queries and combine them with IE8 specific styles when warranted.  As I was using SVG sprite icons wherever possible to reduce bandwidth and latency, I elected to provide PNG fallback sprites that shared the same CSS classes. I used the Gulp build system to accomplish these and other tasks.  
 						</p>
-						<h4>More Flexible Content</h4>
+						</div>
+						<div class="page">
+						<h4>More Flexible Content Management</h4>
 						<p>
-							The legacy desktop and mobile sites' content was rendered in HTML, as a result, the source was heavily married with unnecessary presentation markup. In order for Safety's content to be more semantic and thus more portable, I elected to have our source content converted to Markdown.  The Markdown files are then run through a templating engine that compiles clean HTML. Creating and editing articles is very clean and applies more of a "What you see is what you mean" (WYSIWYM) paradigm instead of the "What you see is what you get" (WYSIWYG) paradigm to structured documents.  Combined with YAML frontmatter, generating content is infinitely flexible.  For instance, as an author I can create page specific variables that when compiled will generate JSON-LD and Microdata in order to help Google better index Safety's content.  
+							The legacy desktop and mobile sites' source content was rendered in HTML, as a result, the source was heavily married with presentation markup. I elected to have our source content converted to a more portable format - Markdown.  The Markdown files are then run through a templating engine that compiles clean HTML. Creating and editing articles is very clean and applies more of a "What you see is what you mean" (WYSIWYM) paradigm instead of the "What you see is what you get" (WYSIWYG) paradigm to structured documents.  Further, using YAML frontmatter, authors can add page specific variables that when compiled will generate JSON-LD and Microdata in order to help Google better index Safety's content.  
 						</p>
 					</div>
+					<nav class="nav-pagination">
+						<ul>
+							<li class="current">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</nav>	
+
 					<p><a href="https://www.safetyinsurance.com" target="_blank" class="visit">Visit this project</a>
 					</p>
 				</div>
@@ -162,12 +173,33 @@
 				<a href="#top"></a>
 			</p>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 		<script type="text/javascript">
 			<!--
-			var transitions = setTimeout(function() {
-				document.getElementsByTagName('body')[0].className='ready';
 
-			},200);
+			
+				var transitions = setTimeout(function() {
+					$('body').addClass('ready');
+				},200);
+
+
+				var pagenav = $('.nav-pagination li');
+				var pages = $('#project-responsive .page');
+
+				pagenav.each(function(index){
+					
+					$(this).click(function(){
+
+						$('.current').removeClass('current');
+						$(this).addClass('current');
+						pages.eq(index).addClass('current');
+					})
+				})
+
+				
+			
+
 			//-->
 		</script>
 

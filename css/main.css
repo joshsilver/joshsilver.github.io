@@ -470,7 +470,7 @@ header {
     right: 0;
     left: 0; }
     body.ready header:before {
-      opacity: 0; }
+      opacity: 0; z-index:-1;}
   header .profile-caption {
     margin: 0 auto 0 auto;
     width: 75%; }

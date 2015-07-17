@@ -149,8 +149,8 @@ header {
 		margin:0 auto 0 auto;
 		width: span(3 of 4);
 
-		a {
-			&:before {
+		.divider {
+			&:after {
 				
 
 				@include breakpoint(490px) {

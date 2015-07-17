@@ -21,13 +21,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -50,7 +52,8 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -63,7 +66,8 @@ video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevents modern browsers from displaying `audio` without controls.
@@ -71,7 +75,8 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -79,7 +84,8 @@ audio:not([controls]) {
  */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -87,14 +93,16 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
 a:active, a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -102,20 +110,23 @@ a:active, a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -123,20 +134,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Addresses styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -146,13 +160,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -161,13 +178,15 @@ sub {
  * 2. Improves image quality when scaled in IE 7.
  */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -175,20 +194,23 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address differences between Firefox and other browsers.
  */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Contain overflow in all browsers.
  */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
@@ -199,7 +221,8 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /* Forms
    ========================================================================== */
@@ -224,13 +247,15 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -240,7 +265,8 @@ button {
  */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -257,14 +283,16 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -272,14 +300,16 @@ html input[disabled] {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
@@ -291,7 +321,8 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -300,7 +331,8 @@ input[type="radio"] {
  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
@@ -310,7 +342,8 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -319,7 +352,8 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Define consistent border, margin, and padding.
@@ -327,7 +361,8 @@ input[type="search"]::-webkit-search-decoration {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -339,20 +374,23 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Tables
    ========================================================================== */
@@ -361,11 +399,13 @@ optgroup {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 td,
 th {
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   max-width: 100%;
@@ -373,32 +413,41 @@ body {
   margin-right: auto;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 24px; }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  line-height: 24px;
+}
+
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
 h1, h2, h3, h4, h5 {
-  font-family: "Merriweather", Palatino, "Times New Roman", Times, serif; }
+  font-family: "Merriweather", Palatino, "Times New Roman", Times, serif;
+}
 
 h2 {
   font-size: 1.25em;
   line-height: 2em;
-  margin: 1em 0 0 0; }
+  margin: 1em 0 0 0;
+}
 
 h3 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
 h4 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 a {
   text-decoration: none;
-  color: #2098d1; }
+  color: #2098d1;
+}
 
 p {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 .visit:before {
   content: "";
@@ -407,7 +456,8 @@ p {
   vertical-align: top;
   width: 16px;
   height: 16px;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpElEQVQ4T42TTVIbMRCFv5Yr5ewyN4j2VGxzAjsniH0C7A3gVcgJ4pwgeDXABnMCfIMMJ2CGFHsdAe+giNUpaTx2/ANBqylNv6d+n1rCG5ZNf3eQ+XeQDqgDmVL3P9xg/0H+p7dnxSnwdbtOc+r6+VUDmxYThIOFeIyaKUYT1E9APgDjFw3sxX2L+Z8uYEEyN2xMqi7s+V0X1WvQfKeBTW8txrRREozk7rBx82+Ekon/BTrbMrDnxQmqAViyEmlGXXsBWthbclFu1gzWM2uBygOirZhXuXLDZt+md31EL6O5mhXENbHwzR01A30WLE5577s81rpLMYzdcfMkdrB2VSoDarUc/3yNeddzh3t5rInR+FmeXHYTPmUFJPyQQaBt0yJDaIOGzMEgAWltihcGVXHZUjzt8jbh0UxLk2rpDJFRFa3aFXtWaAXEDT9lW9dlfIDo8PPcDffd5kSKTXOHyEdEeu6oMV0OS6Tt20gQ+6td4jLCctZDXtNHZYb4L0CMU3F56c1IzPskGUhzq2gB9bUHV15jNDEj0E6cfZUczGiTyS6jv3+Lxqn5JLzbAAAAAElFTkSuQmCC"); }
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpElEQVQ4T42TTVIbMRCFv5Yr5ewyN4j2VGxzAjsniH0C7A3gVcgJ4pwgeDXABnMCfIMMJ2CGFHsdAe+giNUpaTx2/ANBqylNv6d+n1rCG5ZNf3eQ+XeQDqgDmVL3P9xg/0H+p7dnxSnwdbtOc+r6+VUDmxYThIOFeIyaKUYT1E9APgDjFw3sxX2L+Z8uYEEyN2xMqi7s+V0X1WvQfKeBTW8txrRREozk7rBx82+Ekon/BTrbMrDnxQmqAViyEmlGXXsBWthbclFu1gzWM2uBygOirZhXuXLDZt+md31EL6O5mhXENbHwzR01A30WLE5577s81rpLMYzdcfMkdrB2VSoDarUc/3yNeddzh3t5rInR+FmeXHYTPmUFJPyQQaBt0yJDaIOGzMEgAWltihcGVXHZUjzt8jbh0UxLk2rpDJFRFa3aFXtWaAXEDT9lW9dlfIDo8PPcDffd5kSKTXOHyEdEeu6oMV0OS6Tt20gQ+6td4jLCctZDXtNHZYb4L0CMU3F56c1IzPskGUhzq2gB9bUHV15jNDEj0E6cfZUczGiTyS6jv3+Lxqn5JLzbAAAAAElFTkSuQmCC");
+}
 
 .download:before {
   content: "";
@@ -416,27 +466,38 @@ p {
   vertical-align: top;
   width: 16px;
   height: 16px;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC"); }
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T+2SURHCMBAF9znACTgAJ1RCHVAcIAGcgIPipA4eQ4d20vTIFIZP8nm5t0n2IoJl+wpss62bpF3erj+A3oHtFbBOfJyATeanBeqkdpfUjRJtn4F9JDWoXSRVz/pkCgshY3gGeD2ndJNJOAQUILPwW0AACcNFQAJhEBYJDr/ywkn0bb8B2G6AwycnA0dJzfATvwY8AChXRxEIzA8tAAAAAElFTkSuQmCC");
+}
 
 [href="#top"] {
   color: #fff;
-  float: right; }
+  float: right;
+}
+
+[href="#top"]:before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/klEQVRYR82X4TUDQRSF761AVIAKUAEqQAWoQFRAOogKUIGoQFQgqUB0kFTwnLtm9qzNTnZmYsP8iXPs7P3efW/fvCESlpmdATgFsAugB+DAbZ8AmAOYARiRfIl9LdseNDOJ3QKQuERjlmBGAG5I6u/gWglgZncArhOE60ISH5IchAgaAcxMkb5WLI6JetUzStFJkxtLAGamvEo81u5YOLkhCMGU6weAi/yjA3EvKIi9qhMlQAe2h5yZkDz0/6wCqOBU7ZtYA5LSQwHgPrX3Dq1v+jqKVHiARwAXmwi9ovFE8tIDqDi2MgA+3Z6djL1zktt07fU54wVFBC6FuQ6eCyBncynuwTPfcy+AMYCjBAeqkRcOkFQQKubUYN4EoM60HwlQF39w+64yISYCsDXF/fYsiFiAUOR19mSImBTEiuc4MY0pQnWsmZmp4HzO27JWOOE6rA630CqKsK1yh27U0m/K6rvRTb+hVXyGGrVyGlEKTOjZ83Vb8ToQC5K9f3MYafzSSJ1zIOW4sFB9lMexa6N/N5BUDpSUtpwTufZMSfoLzfdEVAHoOhWl9V4zNJbrhPztepD48cqxvOaEIGJPybZ0TJ340jUt5mqmTpbrhqLW1ayYgJtWzOVUdaE2rI4ZCyJhXU77a11O68SubQvEX899imSx7NVXNCYp8aj1BSSb9+AHBghxAAAAAElFTkSuQmCC");
+  background-size: cover;
+}
+
+@media (min-width: 800px) {
   [href="#top"]:before {
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 24px;
-    height: 24px;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/klEQVRYR82X4TUDQRSF761AVIAKUAEqQAWoQFRAOogKUIGoQFQgqUB0kFTwnLtm9qzNTnZmYsP8iXPs7P3efW/fvCESlpmdATgFsAugB+DAbZ8AmAOYARiRfIl9LdseNDOJ3QKQuERjlmBGAG5I6u/gWglgZncArhOE60ISH5IchAgaAcxMkb5WLI6JetUzStFJkxtLAGamvEo81u5YOLkhCMGU6weAi/yjA3EvKIi9qhMlQAe2h5yZkDz0/6wCqOBU7ZtYA5LSQwHgPrX3Dq1v+jqKVHiARwAXmwi9ovFE8tIDqDi2MgA+3Z6djL1zktt07fU54wVFBC6FuQ6eCyBncynuwTPfcy+AMYCjBAeqkRcOkFQQKubUYN4EoM60HwlQF39w+64yISYCsDXF/fYsiFiAUOR19mSImBTEiuc4MY0pQnWsmZmp4HzO27JWOOE6rA630CqKsK1yh27U0m/K6rvRTb+hVXyGGrVyGlEKTOjZ83Vb8ToQC5K9f3MYafzSSJ1zIOW4sFB9lMexa6N/N5BUDpSUtpwTufZMSfoLzfdEVAHoOhWl9V4zNJbrhPztepD48cqxvOaEIGJPybZ0TJ340jUt5mqmTpbrhqLW1ayYgJtWzOVUdaE2rI4ZCyJhXU77a11O68SubQvEX899imSx7NVXNCYp8aj1BSSb9+AHBghxAAAAAElFTkSuQmCC");
-    background-size: cover; }
-    @media (min-width: 800px) {
-      [href="#top"]:before {
-        width: 32px;
-        height: 32px; } }
-  [href="#top"]:hover {
-    border: 0; }
-    [href="#top"]:hover:before {
-      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACSklEQVRYR81X23UTMRCdUQM4FWAqIFSQUAGhAljJ/4QKknTg/FsWVICpgKQCNhVgOjANaDhXkfY4znpXq7UP6Gc/VtK9c2c0D6YBa7FYXDDzO2aeEtGEiE7j8ZqINiKyZuaV1vp77rXct9E5N/XeXzHzRQTtO4L/ILNSSn2uqmrTdaCTgLX2mpk/DQDexdow87yqqpt9JFoJOOcmIvJjS+Icq7v21Mz8tk2NZwScc6cRHD4+5IIaIIF4adYTAtHyXyMk7yMMEq+2lWgIHEH2fWRqrfWb9LMhEAPuqs+EQ/wXkRtjzDXuCgTw1ETk5xGlb3sdwRWBwHK5/EJEHw5h3YA7vmqtPwYC1loEx4sBh8NWEfkdZGR+OfQskpXW+oSRXpVS3wouCBaMUdB7/54L5W/AE/HCe25B4I6IzgYo0IBba4MCxhjEUEks3bO1FmnydSaBJ+DM7GIsVIUkaiggY8DTWREpIpFLoNXyXeIlJHJckAVeooSIPPQGYSweawRc8nmfy5ISMcOiuO1b973PUETmSqk1vn3A2/+Z+dJ7P8W349ztmEQ0hE/r3pCIxqTiMQxE5I8xZvJ/FCM0I957tNSDC1KJCrBeKTVtynF0Azrgf9OQJCsGpuUS41HCH4wxaaB57IjSOrYrtqVPmK1tuff+7tDxEMHPO9vyHSVAIrdKdroDsiulAP5sTOsdzYjoslQNWE1E89QBt7HMGU4xps1FBJNx1jMFMKZkpOFRw+ku49g/YkpGGz9JLgpVjRny1oif2Wy2yn0ifwGkEWSCDqku0AAAAABJRU5ErkJggg=="); }
+    width: 32px;
+    height: 32px;
+  }
+}
+
+[href="#top"]:hover {
+  border: 0;
+}
+
+[href="#top"]:hover:before {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACSklEQVRYR81X23UTMRCdUQM4FWAqIFSQUAGhAljJ/4QKknTg/FsWVICpgKQCNhVgOjANaDhXkfY4znpXq7UP6Gc/VtK9c2c0D6YBa7FYXDDzO2aeEtGEiE7j8ZqINiKyZuaV1vp77rXct9E5N/XeXzHzRQTtO4L/ILNSSn2uqmrTdaCTgLX2mpk/DQDexdow87yqqpt9JFoJOOcmIvJjS+Icq7v21Mz8tk2NZwScc6cRHD4+5IIaIIF4adYTAtHyXyMk7yMMEq+2lWgIHEH2fWRqrfWb9LMhEAPuqs+EQ/wXkRtjzDXuCgTw1ETk5xGlb3sdwRWBwHK5/EJEHw5h3YA7vmqtPwYC1loEx4sBh8NWEfkdZGR+OfQskpXW+oSRXpVS3wouCBaMUdB7/54L5W/AE/HCe25B4I6IzgYo0IBba4MCxhjEUEks3bO1FmnydSaBJ+DM7GIsVIUkaiggY8DTWREpIpFLoNXyXeIlJHJckAVeooSIPPQGYSweawRc8nmfy5ISMcOiuO1b973PUETmSqk1vn3A2/+Z+dJ7P8W349ztmEQ0hE/r3pCIxqTiMQxE5I8xZvJ/FCM0I957tNSDC1KJCrBeKTVtynF0Azrgf9OQJCsGpuUS41HCH4wxaaB57IjSOrYrtqVPmK1tuff+7tDxEMHPO9vyHSVAIrdKdroDsiulAP5sTOsdzYjoslQNWE1E89QBt7HMGU4xps1FBJNx1jMFMKZkpOFRw+ku49g/YkpGGz9JLgpVjRny1oif2Wy2yn0ifwGkEWSCDqku0AAAAABJRU5ErkJggg==");
+}
 
 header {
   max-width: 100%;
@@ -449,102 +510,147 @@ header {
   background-image: url("../images/workbackground2-sm.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); }
-  header:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  @media (min-width: 600px) {
-    header {
-      max-height: inherit;
-      background-image: url("../images/workbackground2.jpg"); } }
-  header:before {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
-    content: "";
-    display: block;
-    background: #000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; }
-    body.ready header:before {
-      opacity: 0; z-index:-1;}
-  header .profile-caption {
-    margin: 0 auto 0 auto;
-    width: 75%; }
-    @media (min-width: 490px) {
-      header .profile-caption a:before {
-        content: "| ";
-        display: inline; } }
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 600px) {
+  header {
+    max-height: inherit;
+    background-image: url("../images/workbackground2.jpg");
+  }
+}
+
+header:before {
+  -webkit-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+  opacity: 1;
+  content: "";
+  display: block;
+  background: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+body.ready header:before {
+  opacity: 0;
+  z-index: -1;
+}
+
+header .profile-caption {
+  margin: 0 auto 0 auto;
+  width: 75%;
+}
+
+@media (min-width: 490px) {
+  header .profile-caption a:before {
+    content: "| ";
+    display: inline;
+  }
+}
+
+header .profile-container {
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 25%;
+}
+
+@media (min-width: 600px) {
   header .profile-container {
-    position: relative;
-    margin: 0 auto 0 auto;
-    width: 25%; }
-    @media (min-width: 600px) {
-      header .profile-container {
-        max-width: 250px; } }
-    header .profile-container:after {
-      content: '';
-      display: block;
-      padding-top: 100%; }
-  header
+    max-width: 250px;
+  }
+}
+
+header .profile-container:after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+header
 .profile {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
-    header
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header
 .profile img {
-      max-width: 100%;
-      border-radius: 50%;
-      transition: all 0.8s ease-in-out;
-      transform: scale(0); }
-      body.ready header
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+body.ready header
 .profile img {
-        transform: scale(1); }
-    header
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+header
 .profile:after {
-      content: '';
-      display: block;
-      padding-top: 100%; }
-  header h1 {
-    font-size: 1.5em;
-    color: #fff;
-    text-align: center; }
-  header h2 {
-    font-size: 1em;
-    color: #fff;
-    text-align: center; }
-    header h2 a {
-      color: #fff; }
-      header h2 a:hover {
-        border-bottom: dotted 1px #fff; }
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+header h1 {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+header h2 a {
+  color: #fff;
+}
+
+header h2 a:hover {
+  border-bottom: dotted 1px #fff;
+}
 
 main {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
   padding-left: 4.16667%;
-  padding-right: 4.16667%; }
+  padding-right: 4.16667%;
+}
 
 .intro {
   background: #2098d1;
   color: #fff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
   padding-left: 4.16667%;
-  padding-right: 4.16667%; }
-  .intro a {
-    color: white; }
+  padding-right: 4.16667%;
+}
+
+.intro a {
+  color: white;
+}
 
 .project {
   clear: both;
@@ -552,71 +658,110 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse; }
-  .project:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  @media (min-width: 959px) {
-    .project {
-      flex-direction: row; } }
-  .project h1 {
-    line-height: 1em; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.project:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 959px) {
+  .project {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.project h1 {
+  line-height: 1em;
+}
 
 .project-text {
-  width: 100%; }
-  @media (min-width: 959px) {
-    .project-text {
-      width: 50%; } }
+  width: 100%;
+}
+
+@media (min-width: 959px) {
+  .project-text {
+    width: 50%;
+  }
+}
 
 .project-text-alternate {
-  clear: both; }
+  clear: both;
+}
 
 .project-figure {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  margin-bottom: 0; }
-  .project-figure figcaption {
-    line-height: 2.25em; }
-  @media (min-width: 959px) {
-    .project-figure {
-      width: 50%;
-      margin-right: 6.25%; } }
-  .project-figure img {
-    max-width: 100%;
-    border: solid 1px #E3E5E9;
-    box-shadow: -4px 7px 26px -7px rgba(0, 0, 0, 0.75); }
+  margin-bottom: 0;
+}
+
+.project-figure figcaption {
+  line-height: 2.25em;
+}
+
+@media (min-width: 959px) {
+  .project-figure {
+    width: 50%;
+    margin-right: 6.25%;
+  }
+}
+
+.project-figure img {
+  max-width: 100%;
+  border: solid 1px #E3E5E9;
+  box-shadow: -4px 7px 26px -7px rgba(0, 0, 0, 0.75);
+}
 
 .nav-pagination ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float: right; }
-  .nav-pagination ul li {
-    border: solid 1px #2098d1;
-    color: #2098d1;
-    padding: 0px 5px;
-    font-size: 0.75em;
-    display: inline-block;
-    cursor: pointer; }
-    .nav-pagination ul li:hover {
-      background: rgba(110, 189, 227, 0.3); }
-    .nav-pagination ul li.current {
-      background: #2098d1;
-      color: #fff; }
+  float: right;
+}
+
+.nav-pagination ul li {
+  border: solid 1px #2098d1;
+  color: #2098d1;
+  padding: 0px 5px;
+  font-size: 0.75em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav-pagination ul li:hover {
+  background: rgba(110, 189, 227, 0.3);
+}
+
+.nav-pagination ul li.current {
+  background: #2098d1;
+  color: #fff;
+}
 
 .page {
-  display: none; }
+  display: none;
+}
 
 .current {
-  display: block; }
+  display: block;
+}
 
 footer {
   clear: both;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   float: left;
@@ -624,8 +769,15 @@ footer {
   padding-right: 4.16667%;
   color: #fff;
   background: #222;
-  padding-bottom: 0.25em; }
-  footer a {
-    color: inherit; }
-    footer a:hover {
-      border-bottom: dotted 1px #fff; }
+  padding-bottom: 1em;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:hover {
+  border-bottom: dotted 1px #fff;
+}
+
+/*# sourceMappingURL=p.css.map */

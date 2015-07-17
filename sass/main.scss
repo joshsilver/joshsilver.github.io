@@ -284,6 +284,7 @@ main {
 .project-figure {
 	width: span(4);
 	@include squish(0);
+	margin-bottom:0;
 
 	figcaption {
 		line-height:2.25em;

@@ -575,7 +575,8 @@ main {
 .project-figure {
   width: 100%;
   margin-left: 0%;
-  margin-right: 0%; }
+  margin-right: 0%;
+  margin-bottom: 0; }
   .project-figure figcaption {
     line-height: 2.25em; }
   @media (min-width: 1000px) {

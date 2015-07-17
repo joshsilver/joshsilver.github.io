@@ -371,7 +371,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px; }
   body:after {
@@ -380,7 +380,7 @@ body {
     clear: both; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", Palatino, "Times New Roman", Times, serif; }
 
 h2 {
   font-size: 1.25em;
@@ -446,7 +446,7 @@ header {
   max-height: 330px;
   position: relative;
   background-size: 150%;
-  background-image: url("../images/workbackground2.jpg");
+  background-image: url("../images/workbackground2-sm.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); }
@@ -456,7 +456,8 @@ header {
     clear: both; }
   @media (min-width: 600px) {
     header {
-      max-height: inherit; } }
+      max-height: inherit;
+      background-image: url("../images/workbackground2.jpg"); } }
   header:before {
     transition: opacity 1s ease-in-out;
     opacity: 1;
@@ -557,7 +558,7 @@ main {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 1000px) {
+  @media (min-width: 959px) {
     .project {
       flex-direction: row; } }
   .project h1 {
@@ -565,7 +566,7 @@ main {
 
 .project-text {
   width: 100%; }
-  @media (min-width: 1000px) {
+  @media (min-width: 959px) {
     .project-text {
       width: 50%; } }
 
@@ -579,7 +580,7 @@ main {
   margin-bottom: 0; }
   .project-figure figcaption {
     line-height: 2.25em; }
-  @media (min-width: 1000px) {
+  @media (min-width: 959px) {
     .project-figure {
       width: 50%;
       margin-right: 6.25%; } }

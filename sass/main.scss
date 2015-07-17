@@ -10,10 +10,12 @@ $susy: (
 	output: float,
 	);
 
-$font-body: 'Lato', sans-serif;
-$font-header: 'Merriweather', serif;
+$font-body: 'Lato', Verdana, Helvetica, sans-serif;
+$font-header: 'Merriweather', Palatino, 'Times New Roman', Times, serif;
 
 $blue: #2098d1;
+
+$full: 959px;
 
 body {
 	@include container;
@@ -112,13 +114,15 @@ header {
 	max-height:330px;
 	position:relative;
 	background-size: 150%;
-	background-image: url("../images/workbackground2.jpg");
+	background-image: url("../images/workbackground2-sm.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 	
 	@include breakpoint(600px) {
 		max-height:inherit;
+		background-image: url("../images/workbackground2.jpg");
+	
 	}
 
 	&:before {
@@ -257,7 +261,7 @@ main {
 	margin-bottom:1em;
 	display:flex;
 	flex-direction:column-reverse;
-	@include breakpoint(1000px) {
+	@include breakpoint($full) {
 		flex-direction:row;	
 	}
 
@@ -271,7 +275,7 @@ main {
 .project-text {
 	width: span(4);
 
-	@include breakpoint(1000px) {
+	@include breakpoint($full) {
 		width: span(2 of 4);
 	}	
 	
@@ -290,7 +294,7 @@ main {
 		line-height:2.25em;
 	}
 
-	@include breakpoint(1000px) {
+	@include breakpoint($full) {
 		width: span(2 of 4);
 		@include post(0.25);
 

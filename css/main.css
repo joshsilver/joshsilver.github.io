@@ -696,6 +696,10 @@ main {
 @media (min-width: 959px) {
   .project-text {
     width: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -708,6 +712,7 @@ main {
   margin-left: 0%;
   margin-right: 0%;
   margin-bottom: 0;
+  max-width: 100%;
 }
 
 .project-figure figcaption {
@@ -718,6 +723,10 @@ main {
   .project-figure {
     width: 50%;
     margin-right: 6.25%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -769,7 +778,7 @@ footer {
   padding-right: 4.16667%;
   color: #fff;
   background: #222;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 footer a {

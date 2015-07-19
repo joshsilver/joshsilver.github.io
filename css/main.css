@@ -401,6 +401,9 @@ a, .nav-pagination .nav-readmore {
 p {
   line-height: 1.5em; }
 
+.hidden {
+  display: none; }
+
 @media (min-width: 959px) {
   #mqtest {
     display: none; } }
@@ -451,7 +454,6 @@ header {
   max-height: 330px;
   position: relative;
   background-size: 150%;
-  background-image: url("../images/workbackground2-sm.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
@@ -462,8 +464,7 @@ header {
     clear: both; }
   @media (min-width: 600px) {
     header {
-      max-height: inherit;
-      background-image: url("../images/workbackground2.jpg"); } }
+      max-height: inherit; } }
   header:before {
     transition: opacity 1s ease-in-out;
     opacity: 1;

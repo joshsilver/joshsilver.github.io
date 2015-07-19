@@ -199,10 +199,15 @@
 				var imagePreload = $('#mqtest').is(':hidden') ? 'images/workbackground2.jpg' : 'images/workbackground2-sm.jpg';
 
 				$('<img/>').attr('src', imagePreload).load(function() {
-					$(this).remove();
 					$('header').css('background-image', 'url('+imagePreload+')');
-					$('body').addClass('ready');
+					var transitions = setTimeout(function() {
+						$('body').addClass('ready');
+					},200);
+
 				});
+
+
+
 
 
 

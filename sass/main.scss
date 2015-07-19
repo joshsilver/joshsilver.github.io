@@ -55,6 +55,10 @@ p {
 }
 
 
+.hidden {
+	display:none;
+}
+
 #mqtest {
 	
 	@include breakpoint($full) {
@@ -124,7 +128,7 @@ header {
 	max-height:330px;
 	position:relative;
 	background-size: 150%;
-	background-image: url("../images/workbackground2-sm.jpg");
+	//background-image: url("../images/workbackground2-sm.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
@@ -132,7 +136,7 @@ header {
 	
 	@include breakpoint(600px) {
 		max-height:inherit;
-		background-image: url("../images/workbackground2.jpg");
+		//background-image: url("../images/workbackground2.jpg");
 
 	}
 

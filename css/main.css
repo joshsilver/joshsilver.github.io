@@ -379,6 +379,9 @@ body {
     display: block;
     clear: both; }
 
+body * {
+  transition: none; }
+
 h1, h2, h3, h4, h5 {
   font-family: "Merriweather", Palatino, "Times New Roman", Times, serif; }
 

@@ -24,6 +24,10 @@ body {
 	line-height:24px;
 }
 
+body * {
+	transition: none;
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: $font-header;
 }
